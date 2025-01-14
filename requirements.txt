@@ -1,0 +1,10 @@
+numpy==1.26.4
+einops==0.8.0
+scikit-learn==1.4.2
+pandas==2.2.2
+matplotlib==3.8.2
+torch==2.1.2
+transformers==4.42.3
+tqdm==4.64.1
+mamba-ssm==2.2.2
+causal-conv1d==1.4.0

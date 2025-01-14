@@ -1,0 +1,34 @@
+
+model_name=CARD
+    python -u run.py \
+    --is_training 1 \
+    --root_path ./dataset/\
+    --data_path traffic.csv \
+    --model_id traffic_96_96 \
+    --model $model_name \
+    --data custom \
+    --features M \
+    --seq_len 96 \
+    --label_len 48 \
+    --pred_len 96 \
+    --d_layers 1 \
+    --factor 3 \
+    --enc_in 862 \
+    --dec_in 862 \
+    --c_out 862 \
+    --top_k 5 \
+    --des 'Exp' \
+    --itr 1 \
+    --e_layers 2 \
+    --n_heads 16 \
+    --d_model 128 \
+    --d_ff 256 \
+    --dropout 0.2\
+    --fc_dropout 0.2\
+    --head_dropout 0\
+    --patch_len 16\
+    --stride 8\
+    --patience 5\
+    --train_epochs 10 --lradj CARD \
+    --itr 1 --batch_size 12 --learning_rate 0.0001 \
+    --dp_rank 8 --warmup_epochs 0 
