@@ -1,3 +1,5 @@
+
+
 # SDE
 
 Official code for the KDD 2025 paper:
@@ -22,6 +24,6 @@ pip install -r requirements.txt
 3. Train and evaluate the model:
 
 ```bash
-# Multivariate forecasting with SDE
-bash ./scripts/SAMBA/weather.sh
+# Multivariate forecasting with SAMBA
+bash ./scripts/SAMBA/ECL.sh
 ```
